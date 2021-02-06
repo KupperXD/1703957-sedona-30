@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
@@ -16,18 +16,20 @@
 
   <header class="main-header">
 
-    <a class="main-header-logo">
-      <img src="img/index/logo.png" width="138" height="70" alt="Логотип сайта городка Седона">
-    </a>
-
     <nav class="main-navigation">
       <div class="select-navigation">
+        <div class="main-header-logo">
+           <a>
+            <img src="img/index/logo.png" width="138" height="70" alt="Логотип сайта городка Седона">
+           </a>
+        </div>
       <ul class="site-navigation">
         <li><a class="information navigation" href="catalog.html">Информация</a></li>
         <li><a class="navigation" href="blank.html">Фото и видео</a></li>
         <li><a  class="navigation" href="blank.html">Карта штата</a></li>
-        <li><a  class="navigation" href="blank.html">Гостиницы</a></li>
+        <li><a  class="nav-hotel navigation" href="blank.html">Гостиницы</a></li>
       </ul>
+
       </div>
     </nav>
 
@@ -38,11 +40,11 @@
     <h1 class="hidden">Штат Седона</h1>
 
     <div class="image-background">
-      <img src="img/index/background photo.jpg" width="1200" height="509" alt="Вид на Седону">
       <img src="img/index/welcome.png" width="456.65" height="350.88" alt="Welcome">
     </div>
+    <div class="welcome"></div>
 
-    <section>
+    <section class="container">
       <h2 class="hidden">Преимущества</h2>
 
        <div class="text-column-first">
@@ -51,51 +53,59 @@
        </div>
 
       <ul class="items">
-        <li class="center-item1 subtitle-color">
-          <h3 class="subtitle ">Настоящий городок</h3>
+        <li class="center-item subtitle-color">
+          <div class="features">
+          <h3 class="subtitle ">Настоящий<br> городок</h3>
           <p>-№1-</p>
           <p>Седона- не аттракцион для туристов, там течет своя жизнь</p>
-          <p><img src="img/index/image.jpg" width="800" height="256" alt="Город"></p>
+          </div>
+          <div><img src="img/index/image.jpg" width="800" height="256" alt="Город"></div>
         </li>
-        <li class="center-list">
-          <h3 >Жилье</h3>
+          <div class="services">
+        <li class="center-index" >
+          <div class="icon-services"><img src="img/index/icon-1.png" width="75" height="72" alt="Иконка"></div>
+          <h3 class="offers">Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          <p><img src="img/index/icon-1.png" width="75" height="72" alt="Иконка"></p>
 
         </li>
-        <li class="center-list">
-          <h3>Еда</h3>
+        <li class="center-index">
+          <div class="icon-services"><img src="img/index/icon-3.png" width="75" height="70" alt="Иконка"></div>
+          <h3 class="offers">Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            <p><img src="img/index/icon-3.png" width="75" height="70" alt="Иконка"></p>
 
         </li>
-        <li class="center-list">
-          <h3>Сувениры</h3>
+        <li class="center-index">
+          <div class="icon-services"><img src="img/index/icon-1.png" width="64" height="77" alt="Иконка"></div>
+          <h3 class="offers">Сувениры</h3>
           <p>Не только китайского, но и местного производсва!</p>
-          <p><img src="img/index/icon-1.png" width="64" height="77" alt="Иконка"></p>
+        </div>
 
         </li>
-        <li class="center-item1 subtitle-color">
-          <h3 class="subtitle ">Там есть мост дьявола</h3>
+        <li class="center-item subtitle-color">
+          <div class="features">
+          <h3 class="subtitle ">Там есть<br> мост дьявола</h3>
           <p>-№2-</p>
           <p>Да, по нему можна пройти! если конечно вы осмелитись</p>
-          <p><img src="img/index/image2.jpg" width="800" height="256" alt="Мост Дьявола"></p>
+        </div>
+          <div><img src="img/index/image2.jpg" width="800" height="256" alt="Мост Дьявола"></div>
         </li>
-        <li class="center-item2">
-          <h3 class="subtitle">Небольшая площадь</h3>
+        <div class="services benefits">
+        <li class="center-list">
+          <h3 class="subtitle">Небольшая<br> площадь</h3>
           <p>-№3-</p>
           <p>Все достопримечательности находяться очень близко</p>
         </li>
-        <li class="center-item2">
-          <h3 class="subtitle">Красивая дорога</h3>
+        <li class="center-list">
+          <h3 class="subtitle">Красивая<br> дорога</h3>
           <p>-№4-</p>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
-        <li class="center-item2">
-          <h3 class="subtitle">Мало туристов</h3>
+        <li class="center-list">
+          <h3 class="subtitle">Мало<br> туристов</h3>
           <p>-№5-</p>
           <p>Большинтсво едет в гранд каньйон и толпится там</p>
         </li>
+        </div>
       </ul>
     </section>
 
@@ -133,7 +143,7 @@
   </main>
 
   <footer class="main-footer">
-
+    <div class="container">
     <section>
       <h2 class="hidden">Телефонные данные</h2>
       <p class="footer-contacts">#visitsedona <br>
@@ -177,6 +187,7 @@
           </a>
         </div>
     </section>
+  </div>
   </footer>
 
   </body>
